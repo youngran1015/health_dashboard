@@ -7,7 +7,7 @@ import warnings
 warnings.filterwarnings('ignore')
 
 # 한글 폰트 설정
-plt.rcParams['font.family'] = 'DejaVu Sans'
+plt.rcParams['font.family'] = 'Noto Sans KR'
 plt.rcParams['axes.unicode_minus'] = False
 
 def load_future_data():

@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 # 한글 폰트 설정
-plt.rcParams['font.family'] = 'DejaVu Sans'  # Windows
+plt.rcParams['font.family'] = 'Noto Sans KR'  # Windows
 plt.rcParams['axes.unicode_minus'] = False
 plt.rcParams['figure.max_open_warning'] = 0  # 경고 비활성화
 plt.rcParams['agg.path.chunksize'] = 10000  # 메모리 최적화
