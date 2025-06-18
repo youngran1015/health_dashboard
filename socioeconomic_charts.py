@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 # 한글 폰트 설정
-plt.rcParams['font.family'] = 'Malgun Gothic'  # Windows
+plt.rcParams['font.family'] = 'DejaVu Sans'  # Windows
 plt.rcParams['axes.unicode_minus'] = False
 
 # 사회경제 지표 색상 팔레트 (차분한 주황 계열)

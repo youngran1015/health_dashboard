@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 import matplotlib.font_manager as fm
 
 # 한글 폰트 설정
-plt.rcParams['font.family'] = 'Malgun Gothic'  # Windows
+plt.rcParams['font.family'] = 'DejaVu Sans'  # Windows
 # plt.rcParams['font.family'] = 'AppleGothic'  # Mac
 plt.rcParams['axes.unicode_minus'] = False
 
