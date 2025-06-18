@@ -7,6 +7,11 @@ import warnings
 warnings.filterwarnings('ignore')
 
 # 한글 폰트 설정
+# 한글 폰트 설정
+import matplotlib.font_manager as fm
+import os
+font_path = os.path.join(os.getcwd(), 'fonts', 'NotoSansKR-VariableFont_wght.ttf')
+fm.fontManager.addfont(font_path)
 plt.rcParams['font.family'] = 'Noto Sans KR'
 plt.rcParams['axes.unicode_minus'] = False
 
