@@ -302,3 +302,26 @@ def display_correlation_analysis(correlation, var1_name, var2_name):
 
         # 기존 코드 맨 마지막 (음주율 vs 비만율 다음)에 추가
 
+# 폰트 디버깅 - 임시 추가
+def debug_fonts():
+    import streamlit as st
+    import matplotlib.font_manager as fm
+    import os
+    
+    st.write("### 🔍 폰트 디버깅:")
+    st.write("현재 설정된 폰트:", plt.rcParams['font.family'])
+    
+    # 설치된 폰트 확인
+    fonts = [f.name for f in fm.fontManager.ttflist]
+    korean_fonts = [f for f in fonts if any(keyword in f for keyword in ['Noto', 'Sans', 'Korean', 'CJK'])]
+    st.write("한글 관련 폰트:", korean_fonts[:10])
+    
+    # 폰트 파일 존재 확인
+    font_exists = os.path.exists('fonts/NotoSansKR-VariableFont_wght.ttf')
+    st.write("폰트 파일 존재:", font_exists)
+    
+    # 현재 작업 디렉토리
+    st.write("현재 디렉토리:", os.getcwd())
+
+# 디버깅 함수 호출
+debug_fonts()
